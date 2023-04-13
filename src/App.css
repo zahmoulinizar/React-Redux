@@ -1,0 +1,29 @@
+.App {
+    text-align: center;
+    margin-top: 2rem;
+    border-left: 25px solid #0a1a6c;
+    border-right: 25px solid #0a1a6c;
+    width: 500px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    margin: auto;
+    padding: 10px;
+  }
+  h1{
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgb(123, 65, 21);
+
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(48, 25, 149);
+  }
+  p{
+    font-size: 18px;
+    font-weight: 200;
+    color: rgb(16, 16, 16);
+  }
