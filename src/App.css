@@ -1,29 +1,58 @@
+
 .App {
     text-align: center;
     margin-top: 2rem;
-    border-left: 25px solid #0a1a6c;
-    border-right: 25px solid #0a1a6c;
-    width: 500px;
+    border-left: 25px solid #ed7b00;
+    border-right: 25px solid #ed7b00;
+    width: 900px;
     background-color: antiquewhite;
-    border-radius: 8px;
+    border-radius: 15px;
     margin: auto;
-    padding: 10px;
-  }
-  h1{
-    font-size: 24px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: rgb(123, 65, 21);
+    padding: 30px;
+}
+.content,.task{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin:20px auto;
+  gap: 5px;
+  border: 2px solid #0a1a6c;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 8px;
+}
+button {
+  width: 120px;
+  padding: 5px 2px;
+  border-radius: 8px;
+  background-color: rgb(90, 190, 227);
+  color: azure;
+  border: none;
+}
+input{
+  width:120px;
+  height: 20px;
+  border-radius: 8px;
+  padding: 2px;
+  border: none;
 
-  }
-  h2 {
-    font-size: 24px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: rgb(48, 25, 149);
-  }
-  p{
-    font-size: 18px;
-    font-weight: 200;
-    color: rgb(16, 16, 16);
-  }
+}
+h1{
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgb(123, 65, 21);
+
+}
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(48, 25, 149);
+}
+p{
+  font-size: 18px;
+  font-weight: 200;
+  color: rgb(16, 16, 16);
+}

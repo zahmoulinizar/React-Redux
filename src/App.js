@@ -1,20 +1,14 @@
-import ProfilePhoto from './components/ProfilePhoto'
-import FullName from './components/FullName'
-import './App.css';
-import Address from './components/Address';
+import React from "react";
+//import AddTask from "./components/AddTask";
+//import ListTask from "./components/ListTask";
+import Task from "./components/Task";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>My Profile</h1>
-      <ProfilePhoto/>
-      <FullName/>
-      <Address/>
-      
-      
+    <Task />
     </div>
   );
-}
+};
 
 export default App;
-
