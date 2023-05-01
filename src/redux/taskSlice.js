@@ -1,35 +1,41 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const taskSlice = createSlice({
-  name: "Tasks",
+const itemSlice = createSlice({
+  name: "item",
   initialState: {
-    Tasks: [],
+    items: {
+      globalList: [],
+      filtredList: [],
+    },
   },
   reducers: {
-    addTasks: (state, action) => {
-      state.Tasks.push(action.payload);
+    addItem: (state, action) => {
+      state.items.globalList.push(action.payload);
+      state.items.filtredList = state.items.globalList;
+      console.log(action.payload);
     },
-
-    editTasks: (state, action) => {
-      state.Tasks.map((task) => {
-        if (task.id === action.payload.id) {
-          task.description = action.payload.description;
-        }
-      });
+    doneItem: (state, action) => {
+      state.items.globalList.map((item) =>
+        item.id === action.payload ? (item.isdone = !item.isdone) : item
+      );
+      state.items.filtredList = state.items.globalList;
     },
-
-    deleteTasks: (state, action) => {
-      state.Tasks = state.Tasks.filter((task) => task.id !== action.payload.id);
+    editItem: (state, action) => {
+      state.items.globalList.map((item) =>
+        item.id === action.payload.id
+          ? (item.desc = action.payload.desc)
+          : "404"
+      );
+      state.items.filtredList = state.items.globalList;
     },
-
-    doneTask: (state , action) => {
-      state.Tasks.map((task) => {
-        if (task.id === action.payload.id) {
-          state.Tasks = state.Tasks.filter((task) => task.done !== action.payload.done);
-        }
-      });
+    filterByDone :(state,action) => {
+        state.items.filtredList = state.items.globalList.filter( (task) => task.isdone === action.payload )
     },
-    },
+    reset : (state) => {
+        state.items.filtredList = state.items.globalList;
+    }
+  },
 });
-export const { addTasks, editTasks, deleteTasks , doneTask } = taskSlice.actions;
-export default taskSlice.reducer;
+
+export const { addItem, doneItem, editItem ,filterByDone , reset} = itemSlice.actions;
+export default itemSlice.reducer;

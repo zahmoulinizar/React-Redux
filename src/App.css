@@ -1,58 +1,50 @@
-
-.App {
-    text-align: center;
-    margin-top: 2rem;
-    border-left: 25px solid #ed7b00;
-    border-right: 25px solid #ed7b00;
-    width: 900px;
-    background-color: antiquewhite;
-    border-radius: 15px;
-    margin: auto;
-    padding: 30px;
+.center{
+  text-align: center;
 }
-.content,.task{
-  width: 100%;
+.container{
   display: flex;
-  justify-content:center;
-  align-items: center;
-  margin:20px auto;
-  gap: 5px;
-  border: 2px solid #0a1a6c;
-  background-color: aliceblue;
-  padding: 10px;
-  border-radius: 8px;
+  flex-direction: column;
+ 
 }
-button {
-  width: 120px;
-  padding: 5px 2px;
-  border-radius: 8px;
-  background-color: rgb(90, 190, 227);
-  color: azure;
-  border: none;
+.cardStyle{
+  display: flex;
+  justify-content:space-around;
+  width: 220px;
+  height: auto;
+  margin: 0 20px;
+  margin-bottom:80px;
 }
-input{
-  width:120px;
-  height: 20px;
-  border-radius: 8px;
-  padding: 2px;
-  border: none;
-
+.flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
 }
-h1{
-  font-size: 24px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: rgb(123, 65, 21);
-
+.button{
+  display: flex;
 }
-h2 {
-  font-size: 24px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: rgb(48, 25, 149);
+.center{
+  text-align: center;
 }
-p{
-  font-size: 18px;
-  font-weight: 200;
-  color: rgb(16, 16, 16);
+.container{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.cardStyle{
+  display: flex;
+  justify-content:space-around;
+  width: 220px;
+  height: auto;
+  margin: 0 20px;
+  margin-bottom:80px;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+.button{
+  display: flex;
 }
